@@ -17,6 +17,12 @@
     {
       background-color: #ECECEC;
     }
+    #scr
+    {
+      position: absolute;
+      position: fixed;
+      padding-left: 900px;
+    }
     </style>
     <script>
         $(document).ready(function(){
@@ -57,6 +63,8 @@
             </nav>
         </div>
         <div id="main" class="container">
+          <div class="row">  
+          <div class="col s10">
             <div id="webdev" class="row section scrollspy">
                 <div class="card col s2 orange">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -206,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div id="gamedev" class="row section scrollspy">
                 <div class="card col s2 offset-s1">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="download.png">
@@ -247,13 +255,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col hide-on-small-only m3 l2">
+            </div>
+
+            <div id="scr" class="col s2">
       <ul class="section table-of-contents right-align">
         <li><a href="#webdev">Webdev</a></li>
         <li><a href="#appdev">AppDev</a></li>
         <li><a href="#sysad">Sysad</a></li>
+        <li><a href="#gamedev">GameDev</a></li>
       </ul>
-    </div>    
+    </div>  </div>  
         </div>
 
         <footer class="page-footer red accent-3">
