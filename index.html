@@ -6,10 +6,8 @@
 	</head>
 	<body>
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-	<link rel="stylesheet" type="text/css" href="icons.css">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
-
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style type="text/css">
 	#main
@@ -17,8 +15,8 @@
 		height: 100%;
 	}
 	 
-	body {
-    background-color: #ECECEC;
+	body{
+    background-color: #18FFFF;
 
   	}
   	.slider
@@ -36,6 +34,15 @@
   		margin-top: 400px;
   		margin-bottom: 250px;	
   	}
+  	.nav-wrapper
+    {
+      background-color: #03a9f4;
+    }
+    .page-footer
+    {
+
+      background-color: #03a9f4;
+    }
 	</style>
 	<script>
  		$(document).ready(function(){
@@ -46,9 +53,9 @@
 	</script>
 		<div class="navbar-fixed">
 			<nav>
-				<div class="nav-wrapper red accent-3" >			
+				<div class="nav-wrapper" >			
 				    <div class="brand-logo">
-				        <a href="landing.html"><img src="delta.jpg" class="responsive-img"></a>
+				        <a href="landing.html"><img src="" class="responsive-img"></a>
 				    </div>
 				      	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 				      	<ul class="right hide-on-med-and-down">
@@ -75,82 +82,106 @@
 			</nav>
 		</div>
 		<main id="main" class="container">
-		<div class="slider fullscreen">
-    <ul class="slides">
-      <li>
-        <img class="responsive-img" src="images/hp1.jpg">
-        <div class="caption center-align">
-          <h3>Delta Force</h3>
-          <h5 class="light grey-text text-lighten-3">Hack your way through! </h5>
-        </div>
-      </li>
-      <li>
-        <img class="responsive-img" src="images/hp2.png">
-        <div class="caption right-align">
-          <h3>Programming is addictive!!</h3>
-          <h5 class="light grey-text text-lighten-3">Be Careful!</h5>
-        </div>
-      </li>
-      <li>
-        <img class="responsive-img" src="images/hp3.png">
-        <div class="caption left-align">
-         <!-- <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-        </div>
-      </li>
-    </ul>
-    </div>
-    <div id="ww">
-    <h2 class="center-align">What we do</h2>
-      <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Web Dev</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Appdev</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Sysad</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-  </ul>
-  </div>
-  <div id="www">
-    <h2 class="center-align">Some Cool Stuff We have done</h2>
-      <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Project_1</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Project_2</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Project_3</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-  </ul>
-  </div>
-  </main>
+			
+
+			<div class="slider fullscreen">
+			    <ul class="slides">
+			      	<li>
+			        	<img class="responsive-img" src="images/hp1.jpg">
+			        	<div class="caption center-align">
+			        		<h3>Delta Force</h3>
+			        		<h5 class="light grey-text text-lighten-3">Hack your way through! </h5>
+			        	</div>
+			      	</li>
+			      	<li>
+			        	<img class="responsive-img" src="images/hp2.png">
+			        	<div class="caption right-align">
+			        		<h3>Programming is addictive!!</h3>
+			        	 	<h5 class="light grey-text text-lighten-3">Be Careful!</h5>
+			        	</div>
+			      	</li>
+			      	<li>
+			        	<img class="responsive-img" src="images/hp3.png">
+			        	<div class="caption left-align">
+			        		<!-- <h3>Right Aligned Caption</h3>
+			          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+			       		</div>
+			      	</li>
+			    </ul>
+			</div>
+			
+
+			<div id="ww" class="row">
+			    <div class="col s4 offset s2">
+			    	<h2 >Web dev</h2>
+			    	<p>
+		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		    		</p>
+			    </div>
+			    <div class="col s4">
+			    	<h2>App dev</h2>
+		    		<p>
+		    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		    		</p>
+		    	</div>
+		    	<div class="col s4">
+		    		<h2>Sys Ad</h2>
+		    		<p>
+		    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		    		</p>
+		    	</div>
+		  	</div>
+			
+
+			<div id="www">
+			    <h2 class="center-align">Some Cool Stuff We have done</h2>
+			    <ul class="collapsible popout" data-collapsible="accordion">
+				    <li>
+			      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>Project_1</div>
+			        	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			    	</li>
+			    	<li>
+			      		<div class="collapsible-header"><i class="material-icons">place</i>Project_2</div>
+			      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			    	</li>
+			    	<li>
+			      		<div class="collapsible-header"><i class="material-icons">whatshot</i>Project_3</div>
+			      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			    	</li>
+			  	</ul>
+			</div>
+  	</main>
 	
-		<footer class="page-footer red accent-3">
-          <div class="container">
-          	<div class="row center-align">Connect with us socially</div>
-            <div class="row center-align">  
-              <a href="#"><img src="icons/facebook-square.png"></a>
-              <a href="#"><img src="icons/github.png"></a>
-              <a href="#"><img src="icons/linkedin.png"></a>
-              <a href="#"><img src="icons/twitter.png"></a>
-  			</div>	
-          </div>
-          <div class="footer-copyright">
-            <div class="container right-align">
-           Delta Force © 2015 Copyright Text
-            </div>
-          </div>
-        </footer>	
+	<footer class="page-footer blue">
+      	<div class="container">
+      		<div class="row center-align">Connect with us socially</div>
+        	<div class="row center-align">  
+	        	<a href="#"><img src="icons/facebook-square.png"></a>
+	          	<a href="#"><img src="icons/github.png"></a>
+	          	<a href="#"><img src="icons/linkedin.png"></a>
+	          	<a href="#"><img src="icons/twitter.png"></a>
+			</div>	
+      	</div>
+      	<div class="footer-copyright">
+        	<div class="container right-align">
+       			Delta Force © 2015 Copyright Text
+        	</div>
+      	</div>
+    </footer>	
 	</body>
 </html>
