@@ -2,13 +2,22 @@
 <html>
 	<head>
 		<title>Delta</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/set2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/set1.css"/>
+		<link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
 	<style type="text/css">
 	#main
 	{
@@ -32,7 +41,7 @@
   	{
 
   		margin-top: 400px;
-  		margin-bottom: 250px;	
+  		margin-bottom: 150px;	
   	}
   	.nav-wrapper
     {
@@ -46,9 +55,9 @@
 	</style>
 	<script>
  		$(document).ready(function(){
-   			$(".button-collapse").sideNav();
-      $('.slider').slider();
-      $('.collapsible').collapsible();
+   		$(".button-collapse").sideNav();
+      	$('.slider').slider();
+      	$('.collapsible').collapsible();
  		});
 	</script>
 		<div class="navbar-fixed">
@@ -59,7 +68,7 @@
 				    </div>
 				      	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 				      	<ul class="right hide-on-med-and-down">
-				        <li class="active"><a class="waves-effect waves-teal"href="index.html">About Us</a></li>
+				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
 				        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
 				        <li><a class="waves-effect waves-teal" href="sig.html">SIG</a></li>
 				        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
@@ -69,7 +78,7 @@
 				        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
 				    </ul>
 				    <ul class="side-nav" id="mobile-demo">
-				        <li class="active"><a class="waves-effect waves-teal"href="index.html">About Us</a></li>
+				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
 				        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
 				        <li><a class="waves-effect waves-teal" href="sig.html">SIG</a></li>
 				        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
@@ -81,9 +90,7 @@
 				</div>
 			</nav>
 		</div>
-		<main id="main" class="container">
-			
-
+		<div id="main">
 			<div class="slider fullscreen">
 			    <ul class="slides">
 			      	<li>
@@ -112,89 +119,130 @@
 			
 
 			<div id="ww" class="row">
-			    <div class="col s4 offset s2 center-align">
-		    		<p><i class="material-icons large">public</i></p>
-		    		<p><h2>Web Dev</h2></p>
-			    	<p>
-		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		    		</p>
-			    </div>
-			    <div class="col s4 center-align">
-		    		<p><i class="material-icons large">android</i></p>
-		    		<p><h2>App Dev</h2></p>
-		    		<p>
-		    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		    		</p>
-		    	</div>
-		    	<div class="col s4 center-align">
-		    		<p><i class="material-icons large">memory</i></p>
-		    		<p><h2>Sys Ad</h2></p>
-		    		<p>
-		    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		    		</p>
-		    	</div>
-		  	</div>
+
+			    <h2 class="center-align">What We Do</h2>			    
+		    	<div class="row center-align">
+			        
+			        <div class="col s12 m4 l4">
+			          	<div class="card blue darken-1 hoverable">
+			            	<div class="card-content white-text">
+			              		<p><i class="material-icons large">public</i></p>
+		    					<p><h2>Web Dev</h2></p>
+		    					<p>
+		    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					    		</p>
+			          		</div>
+			        	</div>
+			        </div>    
+			        <div class="col s12 m4 l4">
+			          	<div class="card blue darken-1 hoverable">
+			            	<div class="card-content white-text">
+			              		<p><i class="material-icons large">android</i></p>
+		    					<p><h2>App Dev</h2></p>
+		    					<p>
+		    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					    		</p>
+			          		</div>
+			        	</div>
+			        </div>	
+			        <div class="col s12 m4 l4">
+			          	<div class="card blue darken-1 hoverable">
+			            	<div class="card-content white-text">
+			            		<p><i class="material-icons large">memory</i></p>
+			    				<p><h2>Sys Ad</h2></p>
+					    		<p>
+					    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    				</p>
+			          		</div>
+			       	 	</div>
+			      	</div>
+		  		</div>
+		  	</div>	
 			
 
-			<div id="www">
+			<div id="www" class="grid">
 			    <h2 class="center-align">Some Cool Stuff We have done</h2>
 				<div class="row">
-			        <div class="col s4">
-			          <div class="card yellow darken-1">
-			            <div class="card-content white-text">
-			              <span class="card-title">Card Title</span>
-			              <p>I am a very simple card. I am good at containing small bits of information.
-			              I am convenient because I require little markup to use effectively.</p>
-			            </div>
-			            <div class="card-action">
-			              <a href="#">This is a link</a>
-			              <a href="#">This is a link</a>
-			            </div>
-			          </div>
+			        <div class="col s12 m6 l4">
+			        	<figure class="effect-bubba">
+							<img src="images/16.jpg" alt="img18"/>
+							<figcaption>
+								<h4>Project1</h4>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
 			        </div>
-			        <div class="col s4">
-			          <div class="card pink darken-1">
-			            <div class="card-content white-text">
-			              <span class="card-title">Card Title</span>
-			              <p>I am a very simple card. I am good at containing small bits of information.
-			              I am convenient because I require little markup to use effectively.</p>
-			            </div>
-			            <div class="card-action">
-			              <a href="#">This is a link</a>
-			              <a href="#">This is a link</a>
-			            </div>
-			          </div>
+			        <div class="col s12 m6 l4">
+			        	<figure class="effect-bubba">
+							<img src="images/17.jpg" alt="img18"/>
+							<figcaption>
+								<h4>Project1</h4>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
 			        </div>
-			        <div class="col s4">
-			          <div class="card blue darken-1">
-			            <div class="card-content white-text">
-			              <span class="card-title">Card Title</span>
-			              <p>I am a very simple card. I am good at containing small bits of information.
-			              I am convenient because I require little markup to use effectively.</p>
-			            </div>
-			            <div class="card-action">
-			              <a href="#">This is a link</a>
-			              <a href="#">This is a link</a>
-			            </div>
-			          </div>
+			        <div class="col s12 m6 l4">
+			        	<figure class="effect-bubba">
+							<img src="images/17.jpg" alt="img18"/>
+							<figcaption>
+								<h4>Project1</h4>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+			        </div>
+			    </div>   
+			    <div class="row"> 
+			        <div class="col s12 m4 l4">
+			        	<figure class="effect-bubba">
+							<img src="images/20.jpg" alt="img18"/>
+							<figcaption>
+								<h4>Project1</h4>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+			        </div>
+			        <div class="col s12 m4 l4">
+			        	<figure class="effect-bubba">
+							<img src="images/17.jpg" alt="img18"/>
+							<figcaption>
+								<h4>Project1</h4>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+			        </div>
+			        <div class="col s12 m4 l4">
+			        	<figure class="effect-bubba">
+							<img src="images/12.jpg" alt="img18"/>
+							<figcaption>
+								<h4>Project1</h4>
+								<p>Apollo's last game of pool was so strange.</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
 			        </div>
 			      </div>
-  	</main>
+			</div>      
+  	</div>
 	
 	<footer class="page-footer blue">
       	<div class="container">
