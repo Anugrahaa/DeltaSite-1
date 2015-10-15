@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="js/materialize.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
+
 	<style type="text/css">
 	#main
 	{
@@ -25,7 +26,9 @@
 	}
 	 
 	body{
-    background-color: #18FFFF;
+    background-color:#fd2f08;
+    font-family: "Source Sans Pro";
+    color: red;
 
   	}
   	.slider
@@ -43,14 +46,15 @@
   		margin-top: 400px;
   		margin-bottom: 150px;	
   	}
-  	.nav-wrapper
+
+    .nav-wrapper
     {
-      background-color: #03a9f4;
+      background-color: #192bc2;
     }
-    .page-footer
+    footer
     {
 
-      background-color: #03a9f4;
+      background: #192bc2;
     }
 	</style>
 	<script>
@@ -60,6 +64,11 @@
       	$('.collapsible').collapsible();
  		});
 	</script>
+
+		<script type="text/javascript" src="./Delta_files/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="./Delta_files/animation.js"></script>
+		<script src="./Delta_files/jquery.flapper.js"></script>
+        <script src="./Delta_files/flap.js"></script>
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper" >			
@@ -70,7 +79,7 @@
 				      	<ul class="right hide-on-med-and-down">
 				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
 				        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
-				        <li><a class="waves-effect waves-teal" href="sig.html">SIG</a></li>
+				        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
 				        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
 				        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
 				        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
@@ -80,7 +89,7 @@
 				    <ul class="side-nav" id="mobile-demo">
 				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
 				        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
-				        <li><a class="waves-effect waves-teal" href="sig.html">SIG</a></li>
+				        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
 				        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
 				        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
 				        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
@@ -90,34 +99,17 @@
 				</div>
 			</nav>
 		</div>
-		<div id="main">
-			<div class="slider fullscreen">
-			    <ul class="slides">
-			      	<li>
-			        	<img class="responsive-img" src="images/hp1.jpg">
-			        	<div class="caption center-align">
-			        		<h3>Delta Force</h3>
-			        		<h5 class="light grey-text text-lighten-3">Hack your way through! </h5>
-			        	</div>
-			      	</li>
-			      	<li>
-			        	<img class="responsive-img" src="images/hp2.png">
-			        	<div class="caption right-align">
-			        		<h3>Programming is addictive!!</h3>
-			        	 	<h5 class="light grey-text text-lighten-3">Be Careful!</h5>
-			        	</div>
-			      	</li>
-			      	<li>
-			        	<img class="responsive-img" src="images/hp3.png">
-			        	<div class="caption left-align">
-			        		<!-- <h3>Right Aligned Caption</h3>
-			          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-			       		</div>
-			      	</li>
-			    </ul>
-			</div>
-			
 
+	<link href="./Delta_files/flapper.css" type="text/css" rel="stylesheet">
+	<div id="flappy">
+	<div class="split">
+		<div class="displays">
+			<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+			<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+		</div>
+	</div>
+	</div>
+		<div id="main">
 			<div id="ww" class="row">
 
 			    <h2 class="center-align">What We Do</h2>			    
@@ -208,44 +200,12 @@
 							</figcaption>			
 						</figure>
 			        </div>
-			    </div>   
-			    <div class="row"> 
-			        <div class="col s12 m4 l4">
-			        	<figure class="effect-bubba">
-							<img src="images/20.jpg" alt="img18"/>
-							<figcaption>
-								<h4>Project1</h4>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-			        </div>
-			        <div class="col s12 m4 l4">
-			        	<figure class="effect-bubba">
-							<img src="images/17.jpg" alt="img18"/>
-							<figcaption>
-								<h4>Project1</h4>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-			        </div>
-			        <div class="col s12 m4 l4">
-			        	<figure class="effect-bubba">
-							<img src="images/12.jpg" alt="img18"/>
-							<figcaption>
-								<h4>Project1</h4>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-			        </div>
-			      </div>
+			    </div>  
 			</div>      
   	</div>
 	
-	<footer class="page-footer blue">
-      	<div class="container">
+	<footer class="page-footer" style="background-color:#192bc2">
+      	<div class="container ">
       		<div class="row center-align">Connect with us socially</div>
         	<div class="row center-align">  
 	        	<a href="#"><img src="icons/facebook-square.png"></a>
