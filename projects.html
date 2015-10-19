@@ -16,18 +16,28 @@
 		<link rel="stylesheet" type="text/css" href="css/set2.css" />
 
 		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+
+		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<style type="text/css">
-	#main
+	body
 	{
-		background-color: #76FF03;
-		height: 100%;
+		background-color: #ececec;
+		font-family: 'Vollkorn',serif;
 	}
 	.nav-wrapper
     {
-      background-color: #192bc2;
+      background-color: #d3d3d3;
     }
-	
+    nav ul a
+	{
+		color: blue;
+		font-weight: bold;
+	}
+	footer.page-footer
+	{
+		background-color: #ececec;
+	}
 	</style>
 	<script>
  		$(document).ready(function(){
@@ -64,7 +74,7 @@
 				</div>
 			</nav>
 		</div>
-		<div id="main" class="#FFFFFF blue" width="200px" position="absolute">
+		<div  position="absolute">
 
 
 				<div class="grid">
@@ -153,7 +163,7 @@
 					</figure>
 				</div>
 				</div>
-		<footer class="page-footer" style="background-color:#192bc2">
+		<footer class="page-footer">
           <div class="container center-align">
           	<div class="row">Connect with us socially</div>
             <div class="row">  
@@ -168,6 +178,17 @@
            Delta Force © 2015 Copyright Text
             </div>
           </div>
-        </footer>	
+        </footer>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    	<a class="btn-floating btn-large red">
+      		<i class="large fa fa-code"></i>
+    	</a>
+    	<ul>
+      		<li><a class="btn-floating red"><i class="fa fa-facebook-square"></i></a></li>
+      		<li><a class="btn-floating yellow darken-1"><i class="fa fa-github"></i></a></li>
+      		<li><a class="btn-floating green"><i class="fa fa-linkedin"></i></a></li>
+      		<li><a class="btn-floating blue"><i class="fa fa-google-plus"></i></a></li>
+    	</ul>
+  	</div>	
 	</body>
 </html>
