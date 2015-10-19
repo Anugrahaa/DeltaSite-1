@@ -17,7 +17,7 @@
 	}
 	.nav-wrapper
     {
-      background-color: #192bc2;
+      background-color:#d3d3d3;
     }
     #scr
     {
@@ -28,15 +28,20 @@
     }
     .pos
     {
-    	padding-bottom: 200px;
+    	padding-bottom: 450px;
     }
+  	nav ul a
+	{
+		color: #ff0000;
+		font-weight: bold;
+	}
 	
 	</style>
 	<script>
  		$(document).ready(function(){
    			$(".button-collapse").sideNav();
     		$('.scrollspy').scrollSpy();
-    		
+      	$('.collapsible').collapsible();
  		});
 	</script>
 		<div class="navbar-fixed">
@@ -70,10 +75,14 @@
 			</nav>
 		</div>
 
-		<div id="main" class="container" width="200px" position="absolute">
+		<div id="main" class="container" position="absolute">
 			 <div class="row">
 			    <div class="col s12 m9 l10">
-			      <div id="Hackathon_1" class=" pos section scrollspy">
+			      <div id="Hackathon_1" class="section scrollspy pos">
+			      <div class="row">
+					      <div class="col s12 pos">
+					        <div class="card-panel">
+
 			        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -91,41 +100,18 @@
 			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					          
+					        </div>
+					      </div>
+					    </div>
 			      </div>
 
-			      <div id="Hackathon_2" class=" pos section scrollspy">
-			       <ul class="collapsible" data-collapsible="accordion">
-					    <li>
-					      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Name</div>
-					      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-					    </li>
-					    <li>
-					      	<div class="collapsible-header"><i class="material-icons">place</i>About The Competition</div>
-					      	<div class="collapsible-body">
-						        		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-						        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-						        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-					        </div>
-					    </li>
-					    <li>
-					      <div class="collapsible-header"><i class="material-icons">place</i>Registration</div>
-					      <div class="collapsible-body">
+			      <div id="Hackathon_2" class="section scrollspy pos">
+					  <div class="row">
+					      <div class="col s12 ">
+					        <div class="card-panel ">
+
 			        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -143,17 +129,18 @@
 			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p></div>
-					    </li>
-					    <li>
-					      <div class="collapsible-header"><i class="material-icons">whatshot</i>Timing</div>
-					      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-					    </li>
-					  </ul>
-
+			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					          
+					        </div>
+					      </div>
+					    </div>
 			      </div>
 
 			      <div id="Hackathon_3" class="section scrollspy pos">
+			     <div class="row">
+					      <div class="col s12 pos">
+					        <div class="card-panel">
+
 			        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -171,8 +158,11 @@
 			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			      </div>
+			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					          
+					        </div>
+					      </div>
+					    </div> </div>
 			    </div>
 			    <div id="scr" class="col hide-on-small-only m3 l2">
 			      <ul class="section table-of-contents">
@@ -184,7 +174,7 @@
 			  </div>
 		</div>
 
-		<footer class="page-footer" style="background-color:#192bc2">
+		<footer class="page-footer" style="background-color:#d3d3d3">
           <div class="container center-align">
           	<div class="row">Connect with us socially</div>
             <div class="row">  
