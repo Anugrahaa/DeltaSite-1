@@ -16,8 +16,6 @@
 body {
 	background-color: #2196f3;
 	color: #fff;
-	font-weight: 400;
-	font-size: 1em;
 	font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -37,8 +35,7 @@ section {
 	margin: 0;
 	padding: 4em 1% 0;
 	color: #484B54;
-	font-weight: 800;
-	font-size: 1.5em;
+
 }
 
 .content > h2:first-child {
@@ -76,8 +73,7 @@ section {
 .codrops-top {
 	width: 100%;
 	text-transform: uppercase;
-	font-weight: 800;
-	font-size: 0.69em;
+	
 	line-height: 2.2;
 }
 

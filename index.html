@@ -1,75 +1,143 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Delta</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+	<style>
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+		}
+		a{
+			text-decoration:none;
+		}
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h1,h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#444;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #F2F2F2;
+		}
+		.content{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+		/* Section 1
+		 * --------------------------------------- */
+		
+		#section0 h1{
+			color: #444;
+		}
+		#section0 p{
+			color: #333;
+			opacity: 0.4;
+		}
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		
+		#section1 h1{
+			color: #fff;
+		}
+		#section1 p{
+			opacity: 0.8;
+		}
+
+
+		</style>
 	</head>
 	<body>
-
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link href="./Delta_files/flapper.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
 		<link rel="stylesheet" type="text/css" href="css/set2.css"/>
 		<link rel="stylesheet" type="text/css" href="css/set1.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="js/materialize.js"></script>
-	<link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css"/>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="js/materialize.js"></script>
+		<link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css"/>
+	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/materialize.css">
 
-	<style type="text/css">
-	 
-	body{
-    color: blue;
-        font-family: 'Vollkorn', serif;
-    background-color:#ececec;
+		<style type="text/css">
+			 
+			body{
+		    color: blue;
+		        font-family: 'Vollkorn', serif;
+		    background-color:#ececec;
 
-  	}
-  	nav ul a
-	{
-		color: #ff0000;
-		font-weight: bold;
-	}
-  	.slider
-  	{
-  		margin-top: 70px;
-  	}
-  	#ww
-  	{
-  		margin-top: 1000px;
-  		margin-bottom: 250px;
-  	}
-  	#www
-  	{
+		  	}
+		  	nav ul a
+			{
+				color: #26a69a;
+				font-weight: bold;
+			}
+		  	.slider
+		  	{
+		  		margin-top: 70px;
+		  	}
 
-  		margin-top: 400px;
-  		margin-bottom: 150px;	
-  	}
+		    .nav-wrapper
+		    {
+		      background-color: #d3d3d3;
+		    }
+		    footer
+		    {
 
-    .nav-wrapper
-    {
-      background-color: #d3d3d3;
-    }
-    footer
-    {
-
-      background: #192bc2;
-    }
-    a:hover
-    {
-    	color: red;
-    }
-	</style>
-	<script>
- 		$(document).ready(function(){
-   		$(".button-collapse").sideNav();
-      	$('.slider').slider();
-      	$('.collapsible').collapsible();
- 		});
-	</script>
+		      background: #d3d3d3;
+		    }
+		    a:hover
+		    {
+		    	color: red;
+		    }
+		</style>
+		<script>
+	 		$(document).ready(function(){
+	   		$(".button-collapse").sideNav();
+	      	$('.slider').slider();
+	      	$('.collapsible').collapsible();
+	 		});
+		</script>
 
 		<script type="text/javascript" src="./Delta_files/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="./Delta_files/animation.js"></script>
@@ -81,8 +149,8 @@
 				    <div class="brand-logo">
 				        <a href="landing.html"><img src="" class="responsive-img"></a>
 				    </div>
-				      	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-				      	<ul class="right hide-on-med-and-down">
+				    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				    <ul class="right hide-on-med-and-down">
 				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
 				        <li><a class="waves-effect waves-blue" href="members.html">Members</a></li>
 				        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
@@ -106,129 +174,143 @@
 			</nav>
 		</div>
 
-	<link href="./Delta_files/flapper.css" type="text/css" rel="stylesheet">
-	<div id="flappy">
-	<div class="split">
-		<div class="displays">
-			<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
-			<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
-		</div>
-	</div>
-	</div>
-		<div id="main">
-			<div id="ww" class="row">
+		<div id="fullpage">
 
-			    <h2 class="center-align">What We Do</h2>			    
-		    	<div class="row center-align">
-			        
-			        <div class="col s12 m4 l4">
-			          	<div class="card blue darken-1 hoverable">
-			            	<div class="card-content white-text">
-			              		<p><i class="material-icons large">public</i></p>
-		    					<p><h2>Web Dev</h2></p>
-		    					<p>
-		    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					    		</p>
-			          		</div>
-			        	</div>
-			        </div>    
-			        <div class="col s12 m4 l4">
-			          	<div class="card blue darken-1 hoverable">
-			            	<div class="card-content white-text">
-			              		<p><i class="material-icons large">android</i></p>
-		    					<p><h2>App Dev</h2></p>
-		    					<p>
-		    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					    		</p>
-			          		</div>
-			        	</div>
-			        </div>	
-			        <div class="col s12 m4 l4">
-			          	<div class="card blue darken-1 hoverable">
-			            	<div class="card-content white-text">
-			            		<p><i class="material-icons large">memory</i></p>
-			    				<p><h2>Sys Ad</h2></p>
-					    		<p>
-					    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			    				</p>
-			          		</div>
-			       	 	</div>
-			      	</div>
-		  		</div>
-		  	</div>	
+			<div class="section " id="section0">
+				<div id="flappy">
+					<div class="split">
+						<div class="displays">
+							<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+							<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
+			<div class="section" id="section1">
+				<div id="ww" class="row">
+				    <h2 class="center-align">What We Do</h2>			    
+			    	<div class="row center-align">
+				        <div class="col s12 m4 l4">
+				          	<div class="card blue darken-1 hoverable">
+				            	<div class="card-content white-text">
+				              		<p><i class="material-icons large">public</i></p>
+			    					<p><h2>Web Dev</h2></p>
+			    					<p>
+			    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						    		</p>
+				          		</div>
+				        	</div>
+				        </div>    
+				        <div class="col s12 m4 l4">
+				          	<div class="card blue darken-1 hoverable">
+				            	<div class="card-content white-text">
+				              		<p><i class="material-icons large">android</i></p>
+			    					<p><h2>App Dev</h2></p>
+			    					<p>
+			    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						    		</p>
+				          		</div>
+				        	</div>
+				        </div>	
+				        <div class="col s12 m4 l4">
+				          	<div class="card blue darken-1 hoverable">
+				            	<div class="card-content white-text">
+				            		<p><i class="material-icons large">memory</i></p>
+				    				<p><h2>Sys Ad</h2></p>
+						    		<p>
+						    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				    				</p>
+				          		</div>
+				       	 	</div>
+				      	</div>
+			  		</div>
+				</div>	
+			</div>
 
-			<div id="www" class="grid">
-			    <h2 class="center-align">Some Cool Stuff We have done</h2>
-				<div class="row">
-			        <div class="col s12 m6 l4">
-			        	<figure class="effect-bubba">
-							<img src="images/16.jpg" alt="img18"/>
-							<figcaption>
-								<h4>Project1</h4>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-			        </div>
-			        <div class="col s12 m6 l4">
-			        	<figure class="effect-bubba">
-							<img src="images/17.jpg" alt="img18"/>
-							<figcaption>
-								<h4>Project1</h4>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-			        </div>
-			        <div class="col s12 m6 l4">
-			        	<figure class="effect-bubba">
-							<img src="images/17.jpg" alt="img18"/>
-							<figcaption>
-								<h4>Project1</h4>
-								<p>Apollo's last game of pool was so strange.</p>
-								<a href="#">View more</a>
-							</figcaption>			
-						</figure>
-			        </div>
-			    </div>  
-			</div>      
-  	</div>
-  	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    	<a class="btn-floating btn-large red">
-      		<i class="large fa fa-code"></i>
-    	</a>
-    	<ul>
-      		<li><a class="btn-floating red"><i class="fa fa-facebook-square"></i></a></li>
-      		<li><a class="btn-floating yellow darken-1"><i class="fa fa-github"></i></a></li>
-      		<li><a class="btn-floating green"><i class="fa fa-linkedin"></i></a></li>
-      		<li><a class="btn-floating blue"><i class="fa fa-google-plus"></i></a></li>
-    	</ul>
-  	</div>
-	<footer class="page-footer" style="background-color:#ececec">
-      	<div class="container ">
-      		<div class="row center-align">Made with &hearts; by Delta Force</div>
-      	</div>
-      	<div class="footer-copyright">
-        	<div class="container right-align">
-       			Delta Force © 2015 Copyright Text
-        	</div>
-      	</div>
-    </footer>	
+
+			<div class="section row" id="section2">
+				<div id="www" class="grid">
+				    <h2 class="center-align">Some Cool Stuff We have done</h2>
+					<div class="row">
+				        <div class="col s12 m6 l4">
+				        	<figure class="effect-bubba">
+								<img src="images/16.jpg" alt="img18"/>
+								<figcaption>
+									<h4>Project1</h4>
+									<p>Apollo's last game of pool was so strange.</p>
+									<a href="#">View more</a>
+								</figcaption>			
+							</figure>
+				        </div>
+				        <div class="col s12 m6 l4">
+				        	<figure class="effect-bubba">
+								<img src="images/17.jpg" alt="img18"/>
+								<figcaption>
+									<h4>Project1</h4>
+									<p>Apollo's last game of pool was so strange.</p>
+									<a href="#">View more</a>
+								</figcaption>			
+							</figure>
+				        </div>
+				        <div class="col s12 m6 l4">
+				        	<figure class="effect-bubba">
+								<img src="images/17.jpg" alt="img18"/>
+								<figcaption>
+									<h4>Project1</h4>
+									<p>Apollo's last game of pool was so strange.</p>
+									<a href="#">View more</a>
+								</figcaption>			
+							</figure>
+				        </div>
+				    </div>  
+				</div> 
+					
+				<footer class="page-footer" style="background-color:#d3d3d3">
+		        	<div class="container">
+		          		<div class="row center-align" style="color:#26a69a"><b>Made with &hearts; by Delta Force</b></div>
+		          	</div>	
+		          	<div class="footer-copyright">
+		            	<div class="container right-align" style="color:#26a69a">
+		           			<b>Delta Force © 2015 Copyright Text</b>
+		            	</div>
+		          	</div>
+		        </footer>
+			</div>
+		</div>
+		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		    <a class="btn-floating btn-large red">
+		      	<i class="large fa fa-code"></i>
+		    </a>
+		    <ul>
+	      		<li><a class="btn-floating red"><i class="fa fa-facebook-square"></i></a></li>
+	      		<li><a class="btn-floating yellow darken-1"><i class="fa fa-github"></i></a></li>
+	      		<li><a class="btn-floating green"><i class="fa fa-linkedin"></i></a></li>
+	      		<li><a class="btn-floating blue"><i class="fa fa-google-plus"></i></a></li>
+	    	</ul>
+	  	</div>
+		<script type="text/javascript" src="js/javascript.fullPage.js"></script>
+		<script type="text/javascript">
+			fullpage.initialize('#fullpage', {
+				//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				css3:true
+			});
+		</script>
 	</body>
 </html>
