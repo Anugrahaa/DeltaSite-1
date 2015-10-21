@@ -47,8 +47,8 @@
             }
 
 .flapper {
-    font-family: "Source Sans Pro";
-    font-weight: 300;
+    font-family: "Spicy Rice",cursive;
+    font-weight: 250;
     box-sizing: content-box;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
@@ -311,7 +311,7 @@
 }
 
 .flapper .digit div {
-    color: #000;
+    color: #26a69a;
     padding: 0px;
     background-color: #eee;
 }
