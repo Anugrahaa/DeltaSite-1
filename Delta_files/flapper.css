@@ -1,7 +1,7 @@
 /* STRUCTURAL STYLES */	
     #flappy {
                 width: 100%;
-                font-family: "Source Sans Pro";
+                font-family: "Noto Sans",sans-serif;
                 height:100%;
             }
 
@@ -47,8 +47,8 @@
             }
 
 .flapper {
-    font-family: "Spicy Rice",cursive;
-    font-weight: 250;
+    font-family: "Noto Sans",sans-serif;
+    font-weight: 200;
     box-sizing: content-box;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
