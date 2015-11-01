@@ -13,11 +13,6 @@
 .clearfix:before, .clearfix:after { display: table; content: ''; }
 .clearfix:after { clear: both; }
 
-body {
-	background-color: #2196f3;
-	color: #fff;
-	font-family: 'Raleway', Arial, sans-serif;
-}
 
 
 section {

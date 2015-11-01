@@ -1,25 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-
+  <title>Delta</title>
+  <script type="text/javascript">
+  
+  </script>
     <link rel="stylesheet" type="text/css" href="css/members.css">
-
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css"/>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-</head>
-<body>
  <script>
+ $(window).load(function(){
+    $(".triangles").fadeOut("slow");
+    $("#content").show();
+  });
         $(document).ready(function(){
             $(".button-collapse").sideNav();
             $('.scrollspy').scrollSpy();
         });
         
     </script>
+
+</head>
+<body>
+    <style type="text/css">
+      @-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.triangles {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 81px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.tri {
+  position: absolute;
+  -webkit-animation: pulse 750ms ease-in infinite;
+  -moz-animation: pulse 750ms ease-in infinite;
+  animation: pulse 750ms ease-in infinite;
+  border-top: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 0px;
+}
+.tri.invert {
+  border-top: 0px;
+  border-bottom: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+.tri:nth-child(1) {
+  left: 30px;
+}
+.tri:nth-child(2) {
+  left: 15px;
+  top: 27px;
+  -webkit-animation-delay: -125ms;
+  -moz-animation-delay: -125ms;
+  animation-delay: -125ms;
+}
+.tri:nth-child(3) {
+  left: 30px;
+  top: 27px;
+}
+.tri:nth-child(4) {
+  left: 45px;
+  top: 27px;
+  -webkit-animation-delay: -625ms;
+  -moz-animation-delay: -625ms;
+  animation-delay: -625ms;
+}
+.tri:nth-child(5) {
+  top: 54px;
+  -webkit-animation-delay: -250ms;
+  -moz-animation-delay: -250ms;
+  animation-delay: -250ms;
+}
+.tri:nth-child(6) {
+  top: 54px;
+  left: 15px;
+  -webkit-animation-delay: -250ms;
+  -moz-animation-delay: -250ms;
+  animation-delay: -250ms;
+}
+.tri:nth-child(7) {
+  top: 54px;
+  left: 30px;
+  -webkit-animation-delay: -375ms;
+  -moz-animation-delay: -375ms;
+  animation-delay: -375ms;
+}
+.tri:nth-child(8) {
+  top: 54px;
+  left: 45px;
+  -webkit-animation-delay: -500ms;
+  -moz-animation-delay: -500ms;
+  animation-delay: -500ms;
+}
+.tri:nth-child(9) {
+  top: 54px;
+  left: 60px;
+  -webkit-animation-delay: -500ms;
+  -moz-animation-delay: -500ms;
+  animation-delay: -500ms;
+}
+
+    </style>
       <style type="text/css">
     #main
     {
@@ -28,13 +155,18 @@
     body
     { font-family: 'Iceberg';
       background-color: #ececec;
+      
+    }
+    #content
+    {
+      display: none;
     }
     nav ul a
     {
       color: #26a69a;
       font-weight: bold;
     }
-    #scr
+    #scrollspyPos
     {
       position: absolute;
       position: fixed;
@@ -50,6 +182,18 @@
       background-color: #26a69a;
     }
     </style>
+    <div class="triangles">
+  <div class="tri invert"></div>
+  <div class="tri invert"></div>
+  <div class="tri"></div>
+  <div class="tri invert"></div>
+  <div class="tri invert"></div>
+  <div class="tri"></div>
+  <div class="tri invert"></div>
+  <div class="tri"></div>
+  <div class="tri invert"></div>
+</div>
+  <div id="content">
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper" >         
@@ -85,7 +229,7 @@
     <div class="col s12 m9 l10">
       <div id="webdev" class="section scrollspy">
         <div class="row">
-      <div class="col s6 m6 l4">
+      <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -119,7 +263,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -153,7 +297,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -189,7 +333,7 @@
           </div>
     </div>
     <div class="row">
-      <div class="col s6 m6 l4">
+      <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -223,7 +367,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -257,7 +401,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -296,7 +440,7 @@
 
       <div id="appdev" class="section scrollspy">
         <div class="row">
-      <div class="col s6 m6 l4">
+      <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -330,7 +474,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -364,7 +508,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -401,7 +545,7 @@
     </div>
 
 <div class="row">
-      <div class="col s6 m6 l4">
+      <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -435,7 +579,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -469,7 +613,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -507,7 +651,7 @@
 
       <div id="sysad" class="section scrollspy">
         <div class="row">
-      <div class="col s6 m6 l4">
+      <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -541,7 +685,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -575,7 +719,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -610,7 +754,7 @@
               </div>
           </div>
     </div><div class="row">
-      <div class="col s6 m6 l4">
+      <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -644,7 +788,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -678,7 +822,7 @@
                   </div>
               </div>
           </div>
-          <div class="col s6 m6 l4">
+          <div class="col s4">
               <div class="card hovercard">
                   <div class="cardheader">
 
@@ -715,7 +859,7 @@
     </div>
       </div>
     </div>
-    <div id="scr" class="col hide-on-small-only m3 l2">
+    <div id="scrollspyPos" class="col hide-on-small-only m3 l2">
       <ul class="section table-of-contents">
         <li><a href="#webdev">WebDev</a></li>
         <li><a href="#appdev">AppDev</a></li>
@@ -725,7 +869,7 @@
   </div></div>
     <footer class="page-footer" style="background-color:#d3d3d3">
               <div class="container center-align" style="color:#26a69a;height:100px;padding-top:25px;font-size:20px">
-                <b>Made with &hearts; by Delta Force<b>
+                <b>Made with &hearts; by Delta Force</b>
               </div>
           </footer>
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
@@ -738,6 +882,6 @@
           <li><a class="btn-floating blue"><i class="fa fa-linkedin"></i></a></li>
           <li><a class="btn-floating red"><i class="fa fa-google-plus"></i></a></li>
       </ul>
-    </div>
+    </div></div>
 </body>
 </html>
