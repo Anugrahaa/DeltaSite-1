@@ -85,9 +85,130 @@
 	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+	     <style type="text/css">
+      @-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
+.triangles {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 81px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.tri {
+  position: absolute;
+  -webkit-animation: pulse 750ms ease-in infinite;
+  -moz-animation: pulse 750ms ease-in infinite;
+  animation: pulse 750ms ease-in infinite;
+  border-top: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 0px;
+}
+.tri.invert {
+  border-top: 0px;
+  border-bottom: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+.tri:nth-child(1) {
+  left: 30px;
+}
+.tri:nth-child(2) {
+  left: 15px;
+  top: 27px;
+  -webkit-animation-delay: -125ms;
+  -moz-animation-delay: -125ms;
+  animation-delay: -125ms;
+}
+.tri:nth-child(3) {
+  left: 30px;
+  top: 27px;
+}
+.tri:nth-child(4) {
+  left: 45px;
+  top: 27px;
+  -webkit-animation-delay: -625ms;
+  -moz-animation-delay: -625ms;
+  animation-delay: -625ms;
+}
+.tri:nth-child(5) {
+  top: 54px;
+  -webkit-animation-delay: -250ms;
+  -moz-animation-delay: -250ms;
+  animation-delay: -250ms;
+}
+.tri:nth-child(6) {
+  top: 54px;
+  left: 15px;
+  -webkit-animation-delay: -250ms;
+  -moz-animation-delay: -250ms;
+  animation-delay: -250ms;
+}
+.tri:nth-child(7) {
+  top: 54px;
+  left: 30px;
+  -webkit-animation-delay: -375ms;
+  -moz-animation-delay: -375ms;
+  animation-delay: -375ms;
+}
+.tri:nth-child(8) {
+  top: 54px;
+  left: 45px;
+  -webkit-animation-delay: -500ms;
+  -moz-animation-delay: -500ms;
+  animation-delay: -500ms;
+}
+.tri:nth-child(9) {
+  top: 54px;
+  left: 60px;
+  -webkit-animation-delay: -500ms;
+  -moz-animation-delay: -500ms;
+  animation-delay: -500ms;
+}
+
+    </style>
+   
 		<style type="text/css">
-			 
+						 
 			body{
 		       font-family: 'Iceberg';
 		    	background-color:#ececec;
@@ -97,11 +218,6 @@
 				color: #26a69a;
 				font-weight: bold;
 			}
-		  	.slider
-		  	{
-		  		margin-top: 70px;
-		  	}
-
 		    .nav-wrapper
 		    {
 		      background-color: #d3d3d3;
@@ -116,6 +232,10 @@
 		    	color: #26a69a;
 		    	font-weight: bold;
 		    }
+		    #fullpage,.navbar-fixed
+		    {
+		    	display: none;
+		    }
 		</style>
 		<script>
 	 		$(document).ready(function(){
@@ -123,168 +243,186 @@
 	      	$('.slider').slider();
 	      	$('.collapsible').collapsible();
 	 		});
+
+ 		$(window).load(function(){
+        $(".triangles").hide();
+        $("#fullpage").show();
+        $(".navbar-fixed").show();
+      });
+ 		
 		</script>
 
 		<script type="text/javascript" src="./Delta_files/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="./Delta_files/animation.js"></script>
 		<script src="./Delta_files/jquery.flapper.js"></script>
         <script src="./Delta_files/flap.js"></script>
-		<div class="navbar-fixed">
-			<nav>
-				<div class="nav-wrapper" >			
-				    <div class="brand-logo">
-				        <a href="landing.html"><img src="" class="responsive-img"></a>
-				    </div>
-				    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-				    <ul class="right hide-on-med-and-down">
-				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
-				        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
-				        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
-				        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
-				        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
-				        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
-				        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
-				        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
-				    </ul>
-				    <ul class="side-nav" id="mobile-demo">
-				        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
-				        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
-				        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
-				        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
-				        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
-				        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
-				        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
-				        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
-				    </ul>
-				</div>
-			</nav>
+		<div class="triangles">
+		  	<div class="tri invert"></div>
+			<div class="tri invert"></div>
+			<div class="tri"></div>
+			<div class="tri invert"></div>
+			<div class="tri invert"></div>
+			<div class="tri"></div>
+			<div class="tri invert"></div>
+			<div class="tri"></div>
+			<div class="tri invert"></div>
 		</div>
+			<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper" >			
+					    <div class="brand-logo">
+					        <a href="landing.html"><img src="" class="responsive-img"></a>
+					    </div>
+					    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					    <ul class="right hide-on-med-and-down">
+					        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
+					        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
+					        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
+					        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
+					        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
+					        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
+					        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
+					        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
+					    </ul>
+					    <ul class="side-nav" id="mobile-demo">
+					        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
+					        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
+					        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
+					        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
+					        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
+					        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
+					        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
+					        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
+					    </ul>
+					</div>
+				</nav>
+			</div>
 
-		<div id="fullpage">
-
-			<div class="section col s12" id="section0">
-				<div id="flappy">
-					<div class="split">
-						<div class="displays">
-							<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
-							<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+			<div id="fullpage">
+				<div class="section col s12" id="section0">
+					<div id="flappy">
+						<div class="split">
+							<div class="displays">
+								<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+								<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="section" id="section1">
-				<div id="ww" class="row">
-				    <h2 class="center-align" style="color:#26a69a">What We Do</h2>			    
-			    	<div class="row center-align">
-				        <div class="col s12 m4 l4">
-				          	<div class="card hoverable" style="background:#26a69a">
-				            	<div class="card-content white-text">
-				              		<p><i class="material-icons large">public</i></p>
-			    					<p><h2>Web Dev</h2></p>
-			    					<p >
-			    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						    		</p>
-				          		</div>
-				        	</div>
-				        </div>    
-				        <div class="col s12 m4 l4">
-				          	<div class="card hoverable" style="background:#26a69a">
-				            	<div class="card-content white-text">
-				              		<p><i class="material-icons large">android</i></p>
-			    					<p><h2>App Dev</h2></p>
-			    					<p>
-			    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						    		</p>
-				          		</div>
-				        	</div>
-				        </div>	
-				        <div class="col s12 m4 l4">
-				          	<div class="card hoverable" style="background:#26a69a">
-				            	<div class="card-content white-text">
-				            		<p><i class="material-icons large">memory</i></p>
-				    				<p><h2>Sys Ad</h2></p>
-						    		<p>
-						    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				    				</p>
-				          		</div>
-				       	 	</div>
-				      	</div>
-			  		</div>
-				</div>	
-			</div>
+				
+				<div class="section" id="section1">
+					<div id="ww" class="row">
+					    <h2 class="center-align" style="color:#26a69a">What We Do</h2>			    
+				    	<div class="row center-align">
+					        <div class="col s12 m4 l4">
+					          	<div class="card hoverable" style="background:#26a69a">
+					            	<div class="card-content white-text">
+					              		<p><i class="material-icons large">public</i></p>
+				    					<p><h2>Web Dev</h2></p>
+				    					<p >
+				    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							    		</p>
+					          		</div>
+					        	</div>
+					        </div>    
+					        <div class="col s12 m4 l4">
+					          	<div class="card hoverable" style="background:#26a69a">
+					            	<div class="card-content white-text">
+					              		<p><i class="material-icons large">android</i></p>
+				    					<p><h2>App Dev</h2></p>
+				    					<p>
+				    						Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							    		</p>
+					          		</div>
+					        	</div>
+					        </div>	
+					        <div class="col s12 m4 l4">
+					          	<div class="card hoverable" style="background:#26a69a">
+					            	<div class="card-content white-text">
+					            		<p><i class="material-icons large">memory</i></p>
+					    				<p><h2>Sys Ad</h2></p>
+							    		<p>
+							    			Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					    				</p>
+					          		</div>
+					       	 	</div>
+					      	</div>
+				  		</div>
+					</div>	
+				</div>
 
 
-			<div class="section row" id="section2">
-				<div id="www" class="grid">
-				    <h2 class="center-align" style="color:#26a69a">Some Cool Stuff We have done</h2>
-					<div class="row">
-				        <div class="col s12 m4 l4">
-				        	<figure class="effect-bubba">
-								<img src="images/16.jpg" alt="img18"/>
-								<figcaption>
-									<h4>Project1</h4>
-									<p>Apollo's last game of pool was so strange.</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-				        </div>
-				        <div class="col s12 m4 l4">
-				        	<figure class="effect-bubba">
-								<img src="images/17.jpg" alt="img18"/>
-								<figcaption>
-									<h4>Project1</h4>
-									<p>Apollo's last game of pool was so strange.</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-				        </div>
-				        <div class="col s12 m4 l4">
-				        	<figure class="effect-bubba">
-								<img src="images/17.jpg" alt="img18"/>
-								<figcaption>
-									<h4>Project1</h4>
-									<p>Apollo's last game of pool was so strange.</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-				        </div>
-				    </div>  
-				</div> 
-					
-			<footer class="page-footer" style="background-color:#d3d3d3">
-            	<div class="container center-align" style="color:#26a69a;height:200px;padding-top:15px;font-size:20px">
-           			Made with &hearts; by Delta Force
-            	</div>
-        	</footer>
+				<div class="section row" id="section2">
+					<div id="www" class="grid">
+					    <h2 class="center-align" style="color:#26a69a">Some Cool Stuff We have done</h2>
+						<div class="row">
+					        <div class="col s12 m4 l4">
+					        	<figure class="effect-bubba">
+									<img src="images/16.jpg" alt="img18"/>
+									<figcaption>
+										<h4>Project1</h4>
+										<p>Apollo's last game of pool was so strange.</p>
+										<a href="#">View more</a>
+									</figcaption>			
+								</figure>
+					        </div>
+					        <div class="col s12 m4 l4">
+					        	<figure class="effect-bubba">
+									<img src="images/17.jpg" alt="img18"/>
+									<figcaption>
+										<h4>Project1</h4>
+										<p>Apollo's last game of pool was so strange.</p>
+										<a href="#">View more</a>
+									</figcaption>			
+								</figure>
+					        </div>
+					        <div class="col s12 m4 l4">
+					        	<figure class="effect-bubba">
+									<img src="images/17.jpg" alt="img18"/>
+									<figcaption>
+										<h4>Project1</h4>
+										<p>Apollo's last game of pool was so strange.</p>
+										<a href="#">View more</a>
+									</figcaption>			
+								</figure>
+					        </div>
+					    </div>  
+					</div> 
+						
+					<footer class="page-footer" style="background-color:#d3d3d3">
+		            	<div class="container center-align" style="color:#26a69a;height:200px;padding-top:15px;font-size:20px">
+		           			<b>Made with &hearts; by Delta Force</b>
+		            	</div>
+		        	</footer>
+				</div>
 			</div>
-		</div>
-		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-		    <a class="btn-floating btn-large" style="background:#26a69a">
-		      	<i class="large fa fa-code"></i>
-		    </a>
-		    <ul>
-          <li><a class="btn-floating blue darken-2"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a class="btn-floating black"><i class="fa fa-github"></i></a></li>
-          <li><a class="btn-floating blue"><i class="fa fa-linkedin"></i></a></li>
-          <li><a class="btn-floating red"><i class="fa fa-google-plus"></i></a></li>
-      </ul>
-	  	</div>
+			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+			    <a class="btn-floating btn-large" style="background:#26a69a">
+			      	<i class="large fa fa-code"></i>
+			    </a>
+			    <ul>
+		          	<li><a class="btn-floating blue darken-2"><i class="fa fa-facebook-square"></i></a></li>
+		          	<li><a class="btn-floating black"><i class="fa fa-github"></i></a></li>
+		          	<li><a class="btn-floating blue"><i class="fa fa-linkedin"></i></a></li>
+		          	<li><a class="btn-floating red"><i class="fa fa-google-plus"></i></a></li>
+	      		</ul>
+		  	</div>
+		
 		<script type="text/javascript" src="js/javascript.fullPage.js"></script>
 		<script type="text/javascript">
 			fullpage.initialize('#fullpage', {
