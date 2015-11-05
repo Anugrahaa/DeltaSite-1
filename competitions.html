@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css"/>
 	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" type="text/css" href="css/preloader.css">
 		<style type="text/css">
 			body
 			{	font-family: 'Iceberg';
@@ -37,148 +38,30 @@
 				color: #26a69a;
 				font-weight: bold;
 			}
+			[class^="mdi-"], [class*="mdi-"]
+			{
+				color: #26A69A;
+			}
 			#content
 			{
 				display: none;
 			}
-		
 		</style>
- <style type="text/css">
-      @-webkit-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
-.triangles {
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 81px;
-  width: 90px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
-.tri {
-  position: absolute;
-  -webkit-animation: pulse 750ms ease-in infinite;
-  -moz-animation: pulse 750ms ease-in infinite;
-  animation: pulse 750ms ease-in infinite;
-  border-top: 27px solid #26A69A;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 0px;
-}
-.tri.invert {
-  border-top: 0px;
-  border-bottom: 27px solid #26A69A;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-}
-.tri:nth-child(1) {
-  left: 30px;
-}
-.tri:nth-child(2) {
-  left: 15px;
-  top: 27px;
-  -webkit-animation-delay: -125ms;
-  -moz-animation-delay: -125ms;
-  animation-delay: -125ms;
-}
-.tri:nth-child(3) {
-  left: 30px;
-  top: 27px;
-}
-.tri:nth-child(4) {
-  left: 45px;
-  top: 27px;
-  -webkit-animation-delay: -625ms;
-  -moz-animation-delay: -625ms;
-  animation-delay: -625ms;
-}
-.tri:nth-child(5) {
-  top: 54px;
-  -webkit-animation-delay: -250ms;
-  -moz-animation-delay: -250ms;
-  animation-delay: -250ms;
-}
-.tri:nth-child(6) {
-  top: 54px;
-  left: 15px;
-  -webkit-animation-delay: -250ms;
-  -moz-animation-delay: -250ms;
-  animation-delay: -250ms;
-}
-.tri:nth-child(7) {
-  top: 54px;
-  left: 30px;
-  -webkit-animation-delay: -375ms;
-  -moz-animation-delay: -375ms;
-  animation-delay: -375ms;
-}
-.tri:nth-child(8) {
-  top: 54px;
-  left: 45px;
-  -webkit-animation-delay: -500ms;
-  -moz-animation-delay: -500ms;
-  animation-delay: -500ms;
-}
-.tri:nth-child(9) {
-  top: 54px;
-  left: 60px;
-  -webkit-animation-delay: -500ms;
-  -moz-animation-delay: -500ms;
-  animation-delay: -500ms;
-}
-
-    </style>
-   
-		<script>
-	 		
+ 		<script>
 	 		$(document).ready(function(){
 	   			$(".button-collapse").sideNav();
 	    		$('.scrollspy').scrollSpy();
-	      	$('.collapsible').collapsible();
+	      		$('.collapsible').collapsible();
 	 		});
 
- 		$(window).load(function(){
-        $(".triangles").hide();
-        $("#content").show();
-      });
+	 		$(window).load(function(){
+		        $(".triangles").hide();
+		        $("#content").show();
+		    });
 		</script>
-		<div class="triangles">
+
+		<div class="triangles">   <!-- preloader -->
 			<div class="tri invert"></div>
 			<div class="tri invert"></div>
 			<div class="tri"></div>
@@ -188,9 +71,9 @@
 			<div class="tri invert"></div>
 			<div class="tri"></div>
 			<div class="tri invert"></div>
-		</div>
-		<div id="content">
-		<div class="navbar-fixed">
+		</div>                     <!--preloader ends -->
+		<div id="content">         <!--Content to be loader -->  
+		<div class="navbar-fixed">  
 			<nav>
 				<div class="nav-wrapper" >			
 				    <div class="brand-logo">
@@ -353,21 +236,21 @@
 		</div>
 
 		<footer class="page-footer" style="background-color:#d3d3d3">
-            	<div class="container center-align" style="color:#26a69a;height:100px;padding-top:25px;font-size:20px">
-           			<b>Made with &hearts; by Delta Force</b>
-            	</div>
-        	</footer>
+            <div class="container center-align" style="color:#26a69a;height:100px;padding-top:25px;font-size:20px">
+           		<b>Made with &hearts; by Delta Force</b>
+            </div>
+        </footer>
         
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">  <!-- Social media button -->
 			<a class="btn-floating btn-large" style="background:#26a69a">
 		  		<i class="large fa fa-code"></i>
 			</a>
 			<ul>
-          <li><a class="btn-floating blue darken-2"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a class="btn-floating black"><i class="fa fa-github"></i></a></li>
-          <li><a class="btn-floating blue"><i class="fa fa-linkedin"></i></a></li>
-          <li><a class="btn-floating red"><i class="fa fa-google-plus"></i></a></li>
-      </ul>
+	          	<li><a class="btn-floating blue darken-2"><i class="fa fa-facebook-square"></i></a></li>
+	            <li><a class="btn-floating black"><i class="fa fa-github"></i></a></li>
+	            <li><a class="btn-floating blue"><i class="fa fa-linkedin"></i></a></li>
+	            <li><a class="btn-floating red"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
 		</div>	
 	</div>
 	</body>

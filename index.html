@@ -4,73 +4,8 @@
 		<title>Delta</title>
 	</head>
 	<body>
-	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
-	<style>
-		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-		form,fieldset,input,textarea,p,blockquote,th,td {
-		    padding: 0;
-		    margin: 0;
-		}
-		a{
-			text-decoration:none;
-		}
-		table {
-		    border-spacing: 0;
-		}
-		fieldset,img {
-		    border: 0;
-		}
-		address,caption,cite,code,dfn,em,strong,th,var {
-		    font-weight: normal;
-		    font-style: normal;
-		}
-		strong{
-			font-weight: bold;
-		}
-		ol,ul {
-		    list-style: none;
-		    margin:0;
-		    padding:0;
-		}
-		caption,th {
-		    text-align: left;
-
-		}
-		h1,h2,h3,h4,h5,h6 {
-		    font-weight: normal;
-		    font-size: 100%;
-		    margin:0;
-		    padding:0;
-		    color:#444;
-		}
-		q:before,q:after {
-		    content:'';
-		}
-		abbr,acronym { border: 0;
-		}
-		.content{
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-			text-align: center;
-		}
-
-		#section0 h1{
-			color: #444;
-		}
-		#section0 p{
-			color: #333;
-			opacity: 0.4;
-		}		
-		#section1 h1{
-			color: #fff;
-		}
-		#section1 p{
-			opacity: 0.8;
-		}
-
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css"> 
 		<link href="./Delta_files/flapper.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
 		<link rel="stylesheet" type="text/css" href="css/set2.css"/>
@@ -85,128 +20,7 @@
 	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-	     <style type="text/css">
-      @-webkit-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  16.666% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.triangles {
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 81px;
-  width: 90px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
-.tri {
-  position: absolute;
-  -webkit-animation: pulse 750ms ease-in infinite;
-  -moz-animation: pulse 750ms ease-in infinite;
-  animation: pulse 750ms ease-in infinite;
-  border-top: 27px solid #26A69A;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 0px;
-}
-.tri.invert {
-  border-top: 0px;
-  border-bottom: 27px solid #26A69A;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-}
-.tri:nth-child(1) {
-  left: 30px;
-}
-.tri:nth-child(2) {
-  left: 15px;
-  top: 27px;
-  -webkit-animation-delay: -125ms;
-  -moz-animation-delay: -125ms;
-  animation-delay: -125ms;
-}
-.tri:nth-child(3) {
-  left: 30px;
-  top: 27px;
-}
-.tri:nth-child(4) {
-  left: 45px;
-  top: 27px;
-  -webkit-animation-delay: -625ms;
-  -moz-animation-delay: -625ms;
-  animation-delay: -625ms;
-}
-.tri:nth-child(5) {
-  top: 54px;
-  -webkit-animation-delay: -250ms;
-  -moz-animation-delay: -250ms;
-  animation-delay: -250ms;
-}
-.tri:nth-child(6) {
-  top: 54px;
-  left: 15px;
-  -webkit-animation-delay: -250ms;
-  -moz-animation-delay: -250ms;
-  animation-delay: -250ms;
-}
-.tri:nth-child(7) {
-  top: 54px;
-  left: 30px;
-  -webkit-animation-delay: -375ms;
-  -moz-animation-delay: -375ms;
-  animation-delay: -375ms;
-}
-.tri:nth-child(8) {
-  top: 54px;
-  left: 45px;
-  -webkit-animation-delay: -500ms;
-  -moz-animation-delay: -500ms;
-  animation-delay: -500ms;
-}
-.tri:nth-child(9) {
-  top: 54px;
-  left: 60px;
-  -webkit-animation-delay: -500ms;
-  -moz-animation-delay: -500ms;
-  animation-delay: -500ms;
-}
-
-    </style>
-   
+	    <link rel="stylesheet" type="text/css" href="css/preloader.css"> 
 		<style type="text/css">
 						 
 			body{
@@ -256,6 +70,8 @@
 		    	display: none;
 		    }
 		</style>
+		
+
 		<script>
 	 		$(document).ready(function(){
 	   		$(".button-collapse").sideNav();
@@ -263,20 +79,19 @@
 	      	$('.collapsible').collapsible();
 	 		});
 
- 		$(window).load(function(){
-        $(".triangles").hide();
-        $("#fullpage").show();
-        $(".navbar-fixed").show();
-      });
- 		
+	 		$(window).load(function(){ /* preloader functioning */ 
+		        $(".triangles").hide();
+		        $("#fullpage").show();
+		        $(".navbar-fixed").show();
+		    });
 		</script>
 
 		<script type="text/javascript" src="./Delta_files/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="./Delta_files/animation.js"></script>
 		<script src="./Delta_files/jquery.flapper.js"></script>
         <script src="./Delta_files/flap.js"></script>
-		<div class="triangles">
-		  	<div class="tri invert"></div>
+		<div class="triangles">               <!-- Preloader Start-->
+ 		  	<div class="tri invert"></div>
 			<div class="tri invert"></div>
 			<div class="tri"></div>
 			<div class="tri invert"></div>
@@ -285,8 +100,8 @@
 			<div class="tri invert"></div>
 			<div class="tri"></div>
 			<div class="tri invert"></div>
-		</div>
-			<div class="navbar-fixed">
+		</div>								  <!-- Preloader End -->					
+			<div class="navbar-fixed">        <!-- Navigation Bar Start -->
 				<nav>
 					<div class="nav-wrapper" >			
 					    <div class="brand-logo">
@@ -316,11 +131,11 @@
 					    </ul>
 					</div>
 				</nav>
-			</div>
+			</div>										<!-- Navigation Bar div Ends -->							
 
-			<div id="fullpage">
-				<div class="section col s12" id="section0">
-					<div id="flappy">
+			<div id="fullpage">                        <!-- fullpage for smooth scrolling effect -->
+				<div class="section col s12" id="section0">        <!--fullpage divided into sections --><!-- section 1 of fullpage-->
+					<div id="flappy" class="hide-on-med-and-down">  <!-- flapper hidden in medium and smaller devices -->
 						<div class="split">
 							<div class="displays">
 								<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
@@ -330,12 +145,12 @@
 					</div>
 				</div>
 				
-				<div class="section" id="section1">
+				<div class="section" id="section1">    <!-- section 2 of fullpage -->
 					<div id="ww" class="row">
 					    <h2 class="center-align" style="color:#26a69a">What We Do</h2>			    
-				    	<div class="row center-align">
-					        <div class="col s12 m4 l4">
-					          	<div class="card hoverable" style="background:#26a69a">
+				    	<div class="row ">
+					        <div class="">
+					          	<div class="card hoverable col s12 m4 l4" style="background:#26a69a">
 					            	<div class="card-content white-text">
 					              		<p><i class="material-icons large">public</i></p>
 				    					<p><h2>Web Dev</h2></p>
@@ -384,10 +199,10 @@
 					      	</div>
 				  		</div>
 					</div>	
-				</div>
+				</div> <!-- section 2 of fullpage ends -->
 
 
-				<div class="section row" id="section2">
+				<div class="section row" id="section2">  <!-- section 3 of fullpage-->
 					<div id="www" class="grid">
 					    <h2 class="center-align" style="color:#26a69a">Some Cool Stuff We have done</h2>
 						<div class="row">
@@ -423,15 +238,14 @@
 					        </div>
 					    </div>  
 					</div> 
-						
 					<footer class="page-footer" style="background-color:#d3d3d3">
 		            	<div class="container center-align" style="color:#26a69a;height:200px;padding-top:15px;font-size:20px">
 		           			<b>Made with &hearts; by Delta Force</b>
 		            	</div>
 		        	</footer>
-				</div>
-			</div>
-			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+				</div>  <!-- section 3 of fullpage ends -->
+			</div>  <!-- fullpage smooth scrolling effect ends -->
+			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">   <!-- social media button -->
 			    <a class="btn-floating btn-large" style="background:#26a69a">
 			      	<i class="large fa fa-code"></i>
 			    </a>
@@ -443,10 +257,9 @@
 	      		</ul>
 		  	</div>
 		
-		<script type="text/javascript" src="js/javascript.fullPage.js"></script>
+		<script type="text/javascript" src="js/javascript.fullPage.js"></script> <!-- For smooth scrolling effect --> 
 		<script type="text/javascript">
 			fullpage.initialize('#fullpage', {
-				//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				menu: '#menu',
 				css3:true
 			});
