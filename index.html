@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Delta</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Delta</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Delta">
 	</head>
 	<body>
 		<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
@@ -42,7 +48,7 @@
 			}
 			.side-nav a
 			{
-				color: #26A69A;
+				/*color: #26A69A;
 				height: 10rem;
 				text-align: center;
 				padding: 15px;
@@ -50,7 +56,7 @@
 				padding-left: 10px;
 				font-size: 2.2rem;
 				font-family: 'Iceberg';
-				font-weight:normal;
+				font-weight:normal;*/
 			}
 		    .nav-wrapper
 		    {
@@ -101,41 +107,40 @@
 			<div class="tri"></div>
 			<div class="tri invert"></div>
 		</div>								  <!-- Preloader End -->					
-			<div class="navbar-fixed">        <!-- Navigation Bar Start -->
-				<nav>
-					<div class="nav-wrapper" >			
-					    <div class="brand-logo">
-					        <a href="landing.html"><img src="" class="responsive-img"></a>
-					    </div>
-					    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-					    <ul class="right hide-on-med-and-down">
-					        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
-					        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
-					        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
-					        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
-					        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
-					        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
-					        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
-					        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
-					    </ul>
-					    <ul class="side-nav" id="mobile-demo">
-					    	<img src="images/logo.png">
-					        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
-					        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
-					        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
-					        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
-					        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
-					        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
-					        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
-					        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
-					    </ul>
-					</div>
-				</nav>
-			</div>										<!-- Navigation Bar div Ends -->							
+			 <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper" >         
+                    <div class="brand-logo">
+                        <a href="landing.html"><img src="" class="responsive-img"></a>
+                    </div>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                        <ul class="right hide-on-med-and-down">
+                        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
+                        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
+                        <li><a class="waves-effect waves-teal" target="_blank"href="http://sig.deltaforce.club">SIG</a></li>
+                        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
+                        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
+                        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
+                        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
+                        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">  <!-- side-nav activates on medium and smaller devices -->
+                        <li class="active"><a class="waves-effect waves-teal"href="index.html">Home</a></li>
+                        <li><a class="waves-effect waves-teal" href="members.html">Members</a></li>
+                        <li><a class="waves-effect waves-teal" target="_blank" href="http://sig.deltaforce.club">SIG</a></li>
+                        <li><a class="waves-effect waves-teal" href="projects.html">Projects</a></li>
+                        <li><a class="waves-effect waves-teal" href="workshops.html">WorkShops</a></li>
+                        <li><a class="waves-effect waves-teal" href="portals.html">Portals</a></li>
+                        <li><a class="waves-effect waves-teal" href="competitions.html">Competitions</a></li>
+                        <li><a class="waves-effect waves-teal" href="games.html">Games</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>									<!-- Navigation Bar div Ends -->							
 
 			<div id="fullpage">                        <!-- fullpage for smooth scrolling effect -->
-				<div class="section col s12" id="section0">        <!--fullpage divided into sections --><!-- section 1 of fullpage-->
-					<div id="flappy" class="hide-on-med-and-down">  <!-- flapper hidden in medium and smaller devices -->
+				<div class="section col s12 hide-on-med-and-down" id="section0">        <!--fullpage divided into sections --><!-- section 1 of fullpage-->
+					<div id="flappy">  <!-- flapper hidden in medium and smaller devices -->
 						<div class="split">
 							<div class="displays">
 								<div class="activity"></div><input class="display M" style="display: none;"><div class="flapper display M"></div>
@@ -150,7 +155,7 @@
 					    <h2 class="center-align" style="color:#26a69a">What We Do</h2>			    
 				    	<div class="row ">
 					        <div class="">
-					          	<div class="card hoverable col s12 m4 l4" style="background:#26a69a">
+					          	<div class="card hoverable col s12 m12 l4" style="background:#26a69a">
 					            	<div class="card-content white-text">
 					              		<p><i class="material-icons large">public</i></p>
 				    					<p><h2>Web Dev</h2></p>
@@ -165,7 +170,7 @@
 					          		</div>
 					        	</div>
 					        </div>    
-					        <div class="col s12 m4 l4">
+					        <div class="col s12 m12 l4">
 					          	<div class="card hoverable" style="background:#26a69a">
 					            	<div class="card-content white-text">
 					              		<p><i class="material-icons large">android</i></p>
@@ -181,7 +186,7 @@
 					          		</div>
 					        	</div>
 					        </div>	
-					        <div class="col s12 m4 l4">
+					        <div class="col s12 m12 l4">
 					          	<div class="card hoverable" style="background:#26a69a">
 					            	<div class="card-content white-text">
 					            		<p><i class="material-icons large">memory</i></p>
@@ -206,7 +211,7 @@
 					<div id="www" class="grid">
 					    <h2 class="center-align" style="color:#26a69a">Some Cool Stuff We have done</h2>
 						<div class="row">
-					        <div class="col s12 m4 l4">
+					        <div class="col s12 m12 l4">
 					        	<figure class="effect-bubba">
 									<a href="https://github.com/delta/pragyan"><img src="images/16.jpg" alt="img18"/></a>
 									<figcaption>
@@ -216,7 +221,7 @@
 									</figcaption>			
 								</figure>
 					        </div>
-					        <div class="col s12 m4 l4">
+					        <div class="col s12 m12 l4">
 					        	<figure class="effect-bubba">
 									<img src="images/17.jpg" alt="img18"/>
 									<figcaption>
@@ -226,7 +231,7 @@
 									</figcaption>			
 								</figure>
 					        </div>
-					        <div class="col s12 m4 l4">
+					        <div class="col s12 m12 l4">
 					        	<figure class="effect-bubba">
 									<img src="images/17.jpg" alt="img18"/>
 									<figcaption>
@@ -259,10 +264,18 @@
 		
 		<script type="text/javascript" src="js/javascript.fullPage.js"></script> <!-- For smooth scrolling effect --> 
 		<script type="text/javascript">
+		$(function(){
+			var x=$(window).width();
+			console.log(x);
+			if($(window).width()>1048)
+			{
 			fullpage.initialize('#fullpage', {
 				menu: '#menu',
 				css3:true
 			});
+		}
+	});
+			
 		</script>
 	</body>
 </html>
